@@ -3,7 +3,7 @@ require 'open-uri'
 require 'json'
 require 'net/http'
 
-$host = "http://localhost:3000"
+$host = "http://epns.flum.pw"
 $ssl = false
 
 module EPNs
