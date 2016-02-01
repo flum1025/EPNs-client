@@ -1,5 +1,5 @@
 path = File.expand_path('../', __FILE__)
-require File.join(path, '../lib/EPNs.rb')
+require File.join(path, '../lib/epns.rb')
 
 #$host = "http://localhost:3000"
 

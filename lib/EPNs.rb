@@ -86,9 +86,11 @@ module EPNs
       end
 
       ws.on :close do |e|
+        puts e
       end
 
       ws.on :error do |e|
+        puts e
       end
     end
   end
