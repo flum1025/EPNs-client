@@ -9,11 +9,15 @@ EPNs用のrubyクライアントです。詳細は[EPNs](http://epns.flum.pw)
 
 ##How to Use
 Rubyのインストールは省きます。 
-準備としてEPNs-client/に移動しbundle installを実行してください。  
+準備として  
+```
+gem install epns_client
+```
+を実行してください
 　  
 まず、[EPNsのトップページ](http://epns.flum.pw/)でユーザー登録をし、api_keyを取得してください。  
 必要なデータをクライアントに指定すれば接続できます。  
-sample/にデモ用のclient.rbと説明が書いてるので参考にしてください。  
+example/にデモ用のclient.rbと説明が書いてるので参考にしてください。  
 　　  
 
 質問等ありましたらTwitter:[@flum_](https://twitter.com/flum_)までお願いします。  

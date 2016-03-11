@@ -1,3 +1,5 @@
+require "epns_client/version"
+
 require 'websocket-client-simple'
 require 'open-uri'
 require 'json'
@@ -6,19 +8,19 @@ require 'net/http'
 $host = "http://epns.flum.pw"
 $ssl = false
 
-module EPNs
-  class EPNsError < StandardError; end
+module EpnsClient
+  class EpnsClientError < StandardError; end
 
   def self.connect(api_key, registration_id, &blk)
-    ::EPNs::Client.new(Connection.builder(api_key, registration_id), blk)
+    ::EpnsClient::Client.new(Connection.builder(api_key, registration_id), blk)
   end
   
   def self.register(api_key)
-    ::EPNs::Connection.register(api_key)
+    ::EpnsClient::Connection.register(api_key)
   end
   
   def self.send(ids, api_key, options={})
-    ::EPNs::Connection.send_notification(ids, api_key, options)
+    ::EpnsClient::Connection.send_notification(ids, api_key, options)
   end
 
   class Connection
@@ -51,7 +53,7 @@ module EPNs
     
     def self.error?(json)
       return if json['error'].nil?
-      raise EPNsError, "#{json['error']['message']}:#{json['error']['code']}"
+      raise EpnsClientError, "#{json['error']['message']}:#{json['error']['code']}"
     end
     
     def self.post(params, url)
