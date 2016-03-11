@@ -1,26 +1,39 @@
-EPNs-client
-===========
+# EpnsClient
 
-##What is it?
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/epns_client`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-EPNs用のrubyクライアントです。詳細は[EPNs](http://epns.flum.pw)
+TODO: Delete this and the text above, and describe your gem
 
-動作確認はruby 2.0.0p481及びruby 2.1.0ですがruby 1.9.3でも動くと思います。
+## Installation
 
-##How to Use
-Rubyのインストールは省きます。 
-準備としてEPNs-client/に移動しbundle installを実行してください。  
-　  
-まず、[EPNsのトップページ](http://epns.flum.pw/)でユーザー登録をし、api_keyを取得してください。  
-必要なデータをクライアントに指定すれば接続できます。  
-sample/にデモ用のclient.rbと説明が書いてるので参考にしてください。  
-　　  
+Add this line to your application's Gemfile:
 
-質問等ありましたらTwitter:[@flum_](https://twitter.com/flum_)までお願いします。  
+```ruby
+gem 'epns_client'
+```
 
-##License
+And then execute:
 
-The MIT License
+    $ bundle
 
--------
-(c) @2015 flum_
+Or install it yourself as:
+
+    $ gem install epns_client
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/epns_client/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
